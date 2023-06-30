@@ -17,11 +17,7 @@ data <-  read_csv("pkpd_dataset.csv", na= "NA")
 ```
 
 
-#raw_data ----
-
-
-
-# 1 ----
+# 1
 
 #data
 data_cycle_1 <- data |>
