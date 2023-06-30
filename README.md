@@ -43,21 +43,25 @@ ggsave('cycle1_cmt2_pk.png')
 
 ## 2
 
-# data
+data
+```{r}
  data_mean_sd <- data |>
   filter(CYCLE == 1 & NAME == "PK Concentration") |>
   select(ID, NOMTIME, LIDV, NAME, DOSE) |>
   mutate(DOSE = as.numeric(DOSE))
 
-
-
-
-#plot : cycle1 mean, SD pk
 data_mean_sd_1 <- data_mean_sd|>
   group_by(DOSE, NOMTIME) |>
    summarize(LIDV_mean = mean(LIDV),
              LIDV_sd = sd(LIDV)
             )
+```
+
+
+
+plot : cycle1 mean, SD pk
+
+```{r}
 
 data_mean_sd_1 |>
   ggplot(aes(x = NOMTIME, y = LIDV_mean)) + geom_line() + geom_point() +
@@ -66,11 +70,13 @@ data_mean_sd_1 |>
 
 ggsave('cycle1_pk_mean&sd.png')
 
+```
 
 
 ## 3
 
-# data
+Data
+
 data_nca <- data |>
   filter(NAME == "PK Concentration" & !is.na(LIDV)) |>
   select(ID, NOMTIME, LIDV, DOSE, NAME)
