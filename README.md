@@ -14,7 +14,7 @@ library(ggplot2)
 library(NonCompart)
 ```
 
-Data
+Raw Data
 
 ```{r}
 data <-  read_csv("pkpd_dataset.csv", na= "NA")
@@ -43,7 +43,7 @@ ggsave('cycle1_cmt2_pk.png')
 
 ## 2
 
-data
+Data
 ```{r}
  data_mean_sd <- data |>
   filter(CYCLE == 1 & NAME == "PK Concentration") |>
@@ -77,15 +77,24 @@ ggsave('cycle1_pk_mean&sd.png')
 
 Data
 
+```{r}
 data_nca <- data |>
   filter(NAME == "PK Concentration" & !is.na(LIDV)) |>
   select(ID, NOMTIME, LIDV, DOSE, NAME)
 
-#NCA result
+```
 
+NCA result
+
+
+```{r}
 nca_result <- tblNCA(data_nca, key=c("ID", "DOSE"), colTime="NOMTIME", colConc="LIDV",timeUnit = "h", doseUnit="mg", concUnit="ng/mL")
 
-#CMAX mean, median, sd, min, max
+```
+
+CMAX mean, median, sd, min, max
+
+```{r}
 nca_result |>
   select(ID, DOSE, CMAX) |>
   group_by(DOSE) |>
@@ -94,3 +103,5 @@ nca_result |>
             CMAX_sd = sd(CMAX),
             CMAX_min = min(CMAX),
             CMAX_max = max(CMAX))
+
+```
