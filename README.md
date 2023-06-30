@@ -20,21 +20,23 @@ data <-  read_csv("pkpd_dataset.csv", na= "NA")
 
 ## 1
 
-#data
+###data
+```{r}
 data_cycle_1 <- data |>
   filter(CMT == 2 & CYCLE == 1 & NAME == "PK Concentration") |>
   select(ID, NOMTIME, LIDV, DOSE) |>
   mutate(DOSE = as.factor(DOSE))
+```
 
 
-
-#plot: cycle1 cmt2 pk
+###plot: cycle1 cmt2 pk
+```{r}
 data_cycle_1 |>
   ggplot(aes(x = NOMTIME, y = LIDV, color = DOSE, group = ID)) + geom_line() +
   geom_point() + facet_wrap(~DOSE) + labs(title = "cycle1_cmt2_pk")
 
 ggsave('cycle1_cmt2_pk.png')
-
+```
 
 ## 2
 
