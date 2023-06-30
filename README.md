@@ -1,6 +1,8 @@
 # 숙제
+==
 
 #6.27
+--
 
 #packages ----
 library(tidyverse)
