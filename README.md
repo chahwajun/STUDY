@@ -37,9 +37,8 @@ Plot: cycle1 cmt2 pk
 data_cycle_1 |>
   ggplot(aes(x = NOMTIME, y = LIDV, color = DOSE, group = ID)) + geom_line() +
   geom_point() + facet_wrap(~DOSE) + labs(title = "cycle1_cmt2_pk")
-
-ggsave('cycle1_cmt2_pk.png')
 ```
+
 ![Result](https://github.com/chahwajun/r4ds/blob/6.27-pk/cycle1_cmt2_pk.png)
 
 
@@ -69,8 +68,6 @@ data_mean_sd_1 |>
   ggplot(aes(x = NOMTIME, y = LIDV_mean)) + geom_line() + geom_point() +
   geom_errorbar(aes(ymin = LIDV_mean + LIDV_sd, ymax = LIDV_mean - LIDV_sd)) +
   facet_wrap(~DOSE) + labs(title = "cycle1_pk_mean&sd")
-
-ggsave('cycle1_pk_mean&sd.png')
 ```
 
 ![Result](https://github.com/chahwajun/r4ds/blob/6.27-pk/cycle1_pk_mean%26sd.png)
