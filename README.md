@@ -42,7 +42,7 @@ data_cycle_1 |>
 ![Result](https://github.com/chahwajun/r4ds/blob/6.27-pk/cycle1_cmt2_pk.png)
 
 
-## 2
+### 2
 
 Data
 ```{r}
@@ -72,7 +72,7 @@ data_mean_sd_1 |>
 
 ![Result](https://github.com/chahwajun/r4ds/blob/6.27-pk/cycle1_pk_mean%26sd.png)
 
-## 3
+### 3
 
 Data
 
