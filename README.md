@@ -69,7 +69,6 @@ data_mean_sd_1 |>
   facet_wrap(~DOSE) + labs(title = "cycle1_pk_mean&sd")
 
 ggsave('cycle1_pk_mean&sd.png')
-
 ```
 
 
@@ -81,7 +80,6 @@ Data
 data_nca <- data |>
   filter(NAME == "PK Concentration" & !is.na(LIDV)) |>
   select(ID, NOMTIME, LIDV, DOSE, NAME)
-
 ```
 
 NCA result
@@ -89,7 +87,6 @@ NCA result
 
 ```{r}
 nca_result <- tblNCA(data_nca, key=c("ID", "DOSE"), colTime="NOMTIME", colConc="LIDV",timeUnit = "h", doseUnit="mg", concUnit="ng/mL")
-
 ```
 
 
@@ -104,5 +101,4 @@ nca_result |>
             CMAX_sd = sd(CMAX),
             CMAX_min = min(CMAX),
             CMAX_max = max(CMAX))
-
 ```
