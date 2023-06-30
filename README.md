@@ -35,7 +35,8 @@ data_cycle_1 |>
 
 ggsave('cycle1_cmt2_pk.png')
 
-# 2 ----
+
+## 2
 
 # data
  data_mean_sd <- data |>
@@ -62,7 +63,7 @@ ggsave('cycle1_pk_mean&sd.png')
 
 
 
-# 3 ----
+## 3
 
 # data
 data_nca <- data |>
