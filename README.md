@@ -6,12 +6,14 @@
 
 
 ```{r}
-Packages 
+Packages
+
 library(tidyverse)
 library(ggplot2)
 library(NonCompart)
 
 Data
+
 data <-  read_csv("pkpd_dataset.csv", na= "NA")
 ```
 
