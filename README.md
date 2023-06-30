@@ -72,6 +72,7 @@ data_mean_sd_1 |>
 ggsave('cycle1_pk_mean&sd.png')
 ```
 
+![Result](https://github.com/chahwajun/r4ds/blob/6.27-pk/cycle1_pk_mean%26sd.png)
 
 ## 3
 
