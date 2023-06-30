@@ -11,6 +11,7 @@ Packages
 library(tidyverse)
 library(ggplot2)
 library(NonCompart)
+library (knitr)
 ```
 
 Raw Data
@@ -95,12 +96,15 @@ nca_result <- tblNCA(data_nca, key=c("ID", "DOSE"), colTime="NOMTIME", colConc="
 CMAX mean, median, sd, min, max
 
 ```{r}
-nca_result |>
+nca_CMAX <-  nca_result |>
   select(ID, DOSE, CMAX) |>
   group_by(DOSE) |>
   summarize(CMAX_mean = mean(CMAX),
             CMAX_median = median(CMAX),
             CMAX_sd = sd(CMAX),
             CMAX_min = min(CMAX),
-            CMAX_max = max(CMAX))
+            CMAX_max = max(CMAX)
+            )
+
+knitr::kable(nca_CMAX)
 ```
