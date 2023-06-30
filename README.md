@@ -61,7 +61,7 @@ data_mean_sd_1 <- data_mean_sd|>
 
 
 
-plot : cycle1 mean, SD pk
+Plot : cycle1 mean, SD pk
 
 ```{r}
 
