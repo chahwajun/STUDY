@@ -108,3 +108,4 @@ nca_CMAX <-  nca_result |>
 
 knitr::kable(nca_CMAX)
 ```
+![Result](https://github.com/chahwajun/r4ds/blob/6.27-pk/CMAX.png)
