@@ -1,6 +1,6 @@
 # 숙제
 
-6.27
+## 6.27
 --
 
 
@@ -21,7 +21,7 @@ data <-   read_csv("pkpd_dataset.csv", na= "NA")
 ```
 
 
-## 1
+### 1
 
 Data
 ```{r}
