@@ -20,7 +20,7 @@ data <-  read_csv("pkpd_dataset.csv", na= "NA")
 
 ## 1
 
-###data
+Data
 ```{r}
 data_cycle_1 <- data |>
   filter(CMT == 2 & CYCLE == 1 & NAME == "PK Concentration") |>
@@ -29,7 +29,7 @@ data_cycle_1 <- data |>
 ```
 
 
-###plot: cycle1 cmt2 pk
+Plot: cycle1 cmt2 pk
 ```{r}
 data_cycle_1 |>
   ggplot(aes(x = NOMTIME, y = LIDV, color = DOSE, group = ID)) + geom_line() +
