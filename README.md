@@ -92,6 +92,7 @@ nca_result <- tblNCA(data_nca, key=c("ID", "DOSE"), colTime="NOMTIME", colConc="
 
 ```
 
+
 CMAX mean, median, sd, min, max
 
 ```{r}
