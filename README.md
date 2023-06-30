@@ -39,6 +39,8 @@ data_cycle_1 |>
 
 ggsave('cycle1_cmt2_pk.png')
 ```
+![Result](https://github.com/chahwajun/r4ds/blob/6.27-pk/cycle1_cmt2_pk.png)
+
 
 ## 2
 
