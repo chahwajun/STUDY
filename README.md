@@ -17,7 +17,7 @@ library (knitr)
 Raw Data
 
 ```{r}
-data <-   read_csv("pkpd_dataset.csv", na= "NA")
+data <-   read_csv("pkpd_dataset.csv")
 ```
 
 
