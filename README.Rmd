@@ -7,6 +7,6 @@ date: "2023-07-07"
 
 
 
-```{r, code = readr::read_lines('0627.R')}
+```{r, code = readr::read_lines('R/0627HW.R')}
 ```
 
