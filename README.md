@@ -50,17 +50,11 @@ data_cycle_1 <- data |>
 
 #plot: cycle1 cmt2 pk
 data_cycle_1 |>
-  ggplot(aes(x = NOMTIME, y = LIDV, color = DOSE, group = ID)) + geom_line() +
+  ggplot(aes(x = NOMTIME, y = LIDV, group = ID)) + geom_line() +
   geom_point() + facet_wrap(~DOSE) + labs(title = "cycle1_cmt2_pk")
 ```
 
 ![](README_files/figure-gfm/unnamed-chunk-1-1.png)<!-- -->
-
-``` r
-ggsave('cycle1_cmt2_pk.png')
-```
-
-    ## Saving 7 x 5 in image
 
 ``` r
 # 2 ----
@@ -93,12 +87,6 @@ data_mean_sd_1 |>
 ```
 
 ![](README_files/figure-gfm/unnamed-chunk-1-2.png)<!-- -->
-
-``` r
-ggsave('cycle1_pk_mean&sd.png')
-```
-
-    ## Saving 7 x 5 in image
 
 ``` r
 # 3 ----
