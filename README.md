@@ -1628,6 +1628,66 @@ library(nycflights13)
 # 26.2.4 ----
 
 # 1
+
+
+
+# 2
+#이하 생략
+
+
+# 26.3.5 ----
+
+
+flights |>
+  filter(is.na(arr_time))
+
+# 2
+
+filter_severe <- function(df, vars, vars2){
+  df |>
+    filter(is.na({{vars}} | {{vars2}}>= 60)) |>
+    summarize(n = n(), .by = dest )
+
+}
+
+View(flights |>
+  filter_severe(arr_time, dep_delay)
+)
+
+
+
+# 4
+
+
+summarize_weather <- function(df, vars, vars2){
+  df |>
+    summarize(minimum = min({{vars}}, na.rm = TRUE),
+              maximum = max({{vars}} , na.rm = TRUE),
+              mean = mean({{vars}}, na.rm = TRUE), .by = {{vars2}})
+}
+
+weather |>
+  summarize_weather(temp, origin)
+
+
+# 5
+
+
+standarize_time <- function(df, vars){
+  df |>
+    mutate(real_time = make_datetime(year = year, month = month,
+                                     day = day, hour = {{vars}} %/% 100,
+                                     min = {{vars}} %% 100
+    )
+    )
+
+}
+
+
+
+View(flights |>
+  standarize_time(sched_dep_time)
+)
 ```
 
     ## Error: <text>:516:28: unexpected '>='
