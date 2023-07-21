@@ -1,3 +1,8 @@
+README
+================
+2023-07-21
+
+``` r
 ##연습문제 풀이 ----
 
 
@@ -12,7 +17,7 @@ library(tidyverse)
 library(ggplot2)
 
 library(palmerpenguins)
-
+library(nycflights13)
 
 # 1
 
@@ -1623,8 +1628,9 @@ library(nycflights13)
 # 26.2.4 ----
 
 # 1
+```
 
-
-
-
-
+    ## Error: <text>:516:28: unexpected '>='
+    ## 515:     cols = (sched_dep_time >= 0 & sched_dep_time<500 :
+    ## 516:             sched_dep_time >=
+    ##                                 ^

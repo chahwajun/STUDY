@@ -12,7 +12,7 @@ library(tidyverse)
 library(ggplot2)
 
 library(palmerpenguins)
-
+library(nycflights13)
 
 # 1
 
@@ -1621,6 +1621,8 @@ library(tidyverse)
 library(nycflights13)
 
 # 26.2.4 ----
+
+# 1
 
 
 

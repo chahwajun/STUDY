@@ -1,0 +1,11 @@
+---
+title: "README"
+output:
+    github_document: default
+date: "2023-07-21"
+---
+
+
+
+```{r, code = readr::read_lines('R/R 연습문제 풀이.R'), error= TRUE}
+```
