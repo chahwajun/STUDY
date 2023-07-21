@@ -1,0 +1,512 @@
+select(ID, NOMTIME, LIDV, DOSE) |>
+arrange(as.numeric(DOSE))
+data_cycle_1 |>
+ggplot(aes(x = NOMTIME, y = LIDV, color = DOSE, group = ID)) + geom_line() +
+facet_wrap(~DOSE) + labs(title = "cycle1_cmt2_PK")
+facet_wrap(~DOSE) + labs(title = "cycle1_cmt2_PK")
+data_cycle_1 |>
+ggplot(aes(x = NOMTIME, y = LIDV, color = DOSE, group = reorder(ID)) + geom_line() +
+facet_wrap(~DOSE) + labs(title = "cycle1_cmt2_PK")
+data_cycle_1 |>
+data_cycle_1 |>
+ggplot(aes(x = NOMTIME, y = LIDV, color = DOSE, group = ID)) + geom_line() +
+facet_wrap(~DOSE) + labs(title = "cycle1_cmt2_PK")
+data_cycle_1 <- data |>
+filter(CMT == 2 & CYCLE == 1 & NAME == "PK Concentration") |>
+mutate(DOSE = as.character(DOSE)) |>
+select(ID, NOMTIME, LIDV, DOSE)
+data_cycle_1 |>
+ggplot(aes(x = NOMTIME, y = LIDV, color = DOSE, group = ID)) + geom_line() +
+facet_wrap(~DOSE) + labs(title = "cycle1_cmt2_PK")
+source("C:/Users/clex9/OneDrive/바탕 화면/교수님 숙제/06.27/06.27 숙제.R")
+data_cycle_1 <- data |>
+filter(CMT == 2 & CYCLE == 1 & NAME == "PK Concentration") |>
+mutate(DOSE = as.character(DOSE)) |>
+select(ID, NOMTIME, LIDV, DOSE)
+View(data_cycle_1)
+View(data)
+data_cycle_1 |>
+ggplot(aes(x = NOMTIME, y = LIDV, color = DOSE, group = ID)) + geom_line() +
+facet_wrap(~DOSE) + labs(title = "cycle1_cmt2_PK")
+data_cycle_1 <- data |>
+filter(CMT == 2 & CYCLE == 1 & NAME == "PK Concentration") |>
+mutate(DOSE = as.character(DOSE)) |>
+select(ID, NOMTIME, LIDV, DOSE)
+#plot
+data_cycle_1 |>
+ggplot(aes(x = NOMTIME, y = LIDV, color = DOSE, group = ID)) + geom_line() +
+facet_wrap(~DOSE) + labs(title = "cycle1_cmt2_PK")
+data_cycle_1 |>
+ggplot(aes(x = NOMTIME, y = LIDV, color = DOSE, group = ID)) + geom_line() +
+facet_wrap(~DOSE) + labs(title = "cycle1_CMT2_PK")
+data_cycle_1 <- data |>
+filter(CMT == 2 & CYCLE == 1 & NAME == "PK Concentration") |>
+mutate(DOSE = as.character(DOSE)) |>
+select(ID, NOMTIME, LIDV, DOSE)
+#plot
+data_cycle_1 |>
+ggplot(aes(x = NOMTIME, y = LIDV, color = DOSE, group = ID)) + geom_line() +
+facet_wrap(~DOSE) + labs(title = "cycle1_cmt2_pk")
+data_cycle_1 <- data |>
+filter(CMT == 2 & CYCLE == 1 & NAME == "PK Concentration") |>
+select(ID, NOMTIME, LIDV, DOSE)
+#plot
+data_cycle_1 |>
+ggplot(aes(x = NOMTIME, y = LIDV, color = DOSE, group = ID)) + geom_line() +
+facet_wrap(~DOSE) + labs(title = "cycle1_cmt2_pk")
+#data
+data_cycle_1 <- data |>
+filter(CMT == 2 & CYCLE == 1 & NAME == "PK Concentration") |>
+select(ID, NOMTIME, LIDV, DOSE) |>
+mutate(as.character(DOSE))
+data_cycle_1 |>
+ggplot(aes(x = NOMTIME, y = LIDV, color = DOSE, group = ID)) + geom_line() +
+facet_wrap(~DOSE) + labs(title = "cycle1_cmt2_pk")
+data_cycle_1 <- data |>
+filter(CMT == 2 & CYCLE == 1 & NAME == "PK Concentration") |>
+select(ID, NOMTIME, LIDV, DOSE) |>
+mutate(DOSE = as.character(DOSE))
+#plot
+data_cycle_1 |>
+ggplot(aes(x = NOMTIME, y = LIDV, color = DOSE, group = ID)) + geom_line() +
+facet_wrap(~DOSE) + labs(title = "cycle1_cmt2_pk")
+#plot
+data_cycle_1 |>
+ggplot(aes(x = NOMTIME, y = reorder(LIDV), color = DOSE, group = ID)) + geom_line() +
+facet_wrap(~DOSE) + labs(title = "cycle1_cmt2_pk")
+data_cycle_1 |>
+ggplot(aes(x = NOMTIME, y = LIDV, color = DOSE, group = ID)) + geom_line() +
+facet_wrap(~DOSE) + labs(title = "cycle1_cmt2_pk")
+data_cycle_1 |>
+ggplot(aes(x = NOMTIME, y = LIDV, color = DOSE, group = ID)) + geom_line() +
+facet_wrap(~DOSE) + labs(title = "cycle1_cmt2_pk")
+data_cycle_1 <- data |>
+filter(CMT == 2 & CYCLE == 1 & NAME == "PK Concentration") |>
+select(ID, NOMTIME, LIDV, DOSE) |>
+mutate(DOSE = as.character(DOSE))
+#plot
+data_cycle_1 |>
+ggplot(aes(x = NOMTIME, y = LIDV, color = DOSE, group = ID)) + geom_line() +
+facet_wrap(~DOSE) + labs(title = "cycle1_cmt2_pk")
+data_cycle_1 <- data |>
+filter(CMT == 2 & CYCLE == 1 & NAME == "PK Concentration") |>
+select(ID, NOMTIME, LIDV, DOSE) |>
+mutate(DOSE = as.character(DOSE))
+#plot
+data_cycle_1 |>
+ggplot(aes(x = NOMTIME, y = LIDV, color = DOSE, group = ID)) + geom_line() +
+facet_wrap(~DOSE) + labs(title = "cycle1_cmt2_pk")
+#plot
+data_cycle_1 |>
+ggplot(aes(x = NOMTIME, y = LIDV, color = DOSE, group = ID)) + geom_line() +
+facet_wrap(~DOSE) + labs(title = "cycle1_cmt2_pk"x = "TIME")
+#plot
+data_cycle_1 |>
+ggplot(aes(x = NOMTIME, y = LIDV, color = DOSE, group = ID)) + geom_line() +
+facet_wrap(~DOSE) + labs(title = "cycle1_cmt2_pk", x = "TIME")
+#plot
+data_cycle_1 |>
+ggplot(aes(x = NOMTIME, y = LIDV, color = DOSE, group = ID)) + geom_line() +
+facet_wrap(~DOSE) + labs(title = "cycle1_cmt2_pk")
+#data
+data_cycle_1 <- data |>
+filter(CMT == 2 & CYCLE == 1 & NAME == "PK Concentration") |>
+select(ID, NOMTIME, LIDV, DOSE) |>
+mutate(DOSE = as.factor(DOSE))
+data_cycle_1 |>
+ggplot(aes(x = NOMTIME, y = LIDV, color = DOSE, group = ID)) + geom_line() +
+facet_wrap(~DOSE) + labs(title = "cycle1_cmt2_pk")
+data_cycle_1 <- data |>
+filter(CMT == 2 & CYCLE == 1 & NAME == "PK Concentration") |>
+select(ID, NOMTIME, LIDV, DOSE) |>
+mutate(DOSE = as.factor(DOSE))
+#plot
+data_cycle_1 |>
+ggplot(aes(x = NOMTIME, y = LIDV, color = DOSE, group = ID)) + geom_line() +
+facet_wrap(~DOSE) + labs(title = "cycle1_cmt2_pk")
+ggplot(data = data |>
+filter(CMT == 2 & CYCLE == 1 & NAME == "PK Concentraion") |>
+select(ID, NOMTIME, LIDV, DOSE) |>
+mutate(DOSE = as.factor(DOSE)), aes(x = NOMTIME, y = LIDV, color = DOSE, group = ID)) + geom_line() +
+facet_wrap(~DOSE) + labs(title = "cycle1_cmt2_pk"
+)
+ggplot(data = data |>
+filter(CMT == 2 & CYCLE == 1 & NAME == "PK Concentraion") |>
+select(ID, NOMTIME, LIDV, DOSE) |>
+mutate(DOSE = as.factor(DOSE)), aes(x = NOMTIME, y = LIDV, color = DOSE, group = ID)) + geom_line() +
+facet_wrap(~DOSE) + labs(title = "cycle1_cmt2_pk")
+ggplot(data = data |>
+filter(CMT == 2 & CYCLE == 1 & NAME == "PK Concentraion") |>
+select(ID, NOMTIME, LIDV, DOSE) |>
+mutate(DOSE = as.factor(DOSE)), aes(x = NOMTIME, y = LIDV, color = DOSE, group = ID)) + geom_line() +
+facet_wrap(~DOSE) + labs(title = "cycle1_cmt2_pk")
+data_cycle_1 <- data |>
+filter(CMT == 2 & CYCLE == 1 & NAME == "PK Concentration") |>
+select(ID, NOMTIME, LIDV, DOSE) |>
+mutate(DOSE = as.factor(DOSE))
+View(data_cycle_1)
+data_cycle_1
+#packages ----
+library(tidyverse)
+library(ggplot2)
+library(NonCompart)
+#data ----
+data_cycle_1 <-  read_csv("pkpd_dataset.csv", na= "NA")
+# 1 ----
+#data
+data_cycle_1 <- data |>
+filter(CMT == 2 & CYCLE == 1 & NAME == "PK Concentration") |>
+select(ID, NOMTIME, LIDV, DOSE) |>
+mutate(DOSE = as.factor(DOSE))
+#packages ----
+library(tidyverse)
+library(ggplot2)
+library(NonCompart)
+#data ----
+data_cycle_1 <-  read_csv("pkpd_dataset.csv", na= "NA")
+# 1 ----
+#data
+data_cycle_1 <- data |>
+filter(CMT == 2 & CYCLE == 1 & NAME == "PK Concentration") |>
+select(ID, NOMTIME, LIDV, DOSE) |>
+mutate(DOSE = as.factor(DOSE))
+#plot
+data_cycle_1 |>
+ggplot(aes(x = NOMTIME, y = LIDV, color = DOSE, group = ID)) + geom_line() +
+facet_wrap(~DOSE) + labs(title = "cycle1_cmt2_pk")
+ggsave('cycle1_cmt2_pk.png')
+#packages ----
+library(tidyverse)
+library(ggplot2)
+library(NonCompart)
+#data ----
+data_cycle_1 <-  read_csv("pkpd_dataset.csv", na= "NA")
+# 1 ----
+#data
+data_cycle_1 <- data |>
+filter(CMT == 2 & CYCLE == 1 & NAME == "PK Concentration") |>
+select(ID, NOMTIME, LIDV, DOSE) |>
+mutate(DOSE = as.factor(DOSE))
+#plot
+data_cycle_1 |>
+ggplot(aes(x = NOMTIME, y = LIDV, color = DOSE, group = ID)) + geom_line() +
+facet_wrap(~DOSE) + labs(title = "cycle1_cmt2_pk")
+ggsave('cycle1_cmt2_pk.png')
+#packages ----
+library(tidyverse)
+library(ggplot2)
+library(NonCompart)
+#data ----
+data_cycle_1 <-  read_csv("pkpd_dataset.csv", na= "NA")
+# 1 ----
+#data
+data_cycle_1 <- data |>
+filter(CMT == 2 & CYCLE == 1 & NAME == "PK Concentration") |>
+select(ID, NOMTIME, LIDV, DOSE) |>
+mutate(DOSE = as.factor(DOSE))
+#plot
+data_cycle_1 |>
+ggplot(aes(x = NOMTIME, y = LIDV, color = DOSE, group = ID)) + geom_line() +
+geom_point +facet_wrap(~DOSE) + labs(title = "cycle1_cmt2_pk")
+#packages ----
+library(tidyverse)
+library(ggplot2)
+library(NonCompart)
+#data ----
+data_cycle_1 <-  read_csv("pkpd_dataset.csv", na= "NA")
+# 1 ----
+#data
+data_cycle_1 <- data |>
+filter(CMT == 2 & CYCLE == 1 & NAME == "PK Concentration") |>
+select(ID, NOMTIME, LIDV, DOSE) |>
+mutate(DOSE = as.factor(DOSE))
+#plot
+data_cycle_1 |>
+ggplot(aes(x = NOMTIME, y = LIDV, color = DOSE, group = ID)) + geom_line() +
+geom_point() + facet_wrap(~DOSE) + labs(title = "cycle1_cmt2_pk")
+#packages ----
+library(tidyverse)
+library(ggplot2)
+library(NonCompart)
+#data ----
+data_cycle_1 <-  read_csv("pkpd_dataset.csv", na= "NA")
+# 1 ----
+#data
+data_cycle_1 <- data |>
+filter(CMT == 2 & CYCLE == 1 & NAME == "PK Concentration") |>
+select(ID, NOMTIME, LIDV, DOSE) |>
+mutate(DOSE = as.factor(DOSE))
+#plot
+data_cycle_1 |>
+ggplot(aes(x = NOMTIME, y = LIDV, color = DOSE, group = ID)) + geom_line() +
+geom_point() + facet_wrap(~DOSE) + labs(title = "cycle1_cmt2_pk")
+ggsave('cycle1_cmt2_pk.png')
+#packages ----
+library(tidyverse)
+library(ggplot2)
+library(NonCompart)
+#data ----
+data_cycle_1 <-  read_csv("pkpd_dataset.csv", na= "NA")
+# 1 ----
+#data
+data_cycle_1 <- data |>
+filter(CMT == 2 & CYCLE == 1 & NAME == "PK Concentration") |>
+select(ID, NOMTIME, LIDV, DOSE) |>
+mutate(DOSE = as.factor(DOSE))
+#plot
+data_cycle_1 |>
+ggplot(aes(x = NOMTIME, y = LIDV, color = DOSE, group = ID)) + geom_line() +
+geom_point() + facet_wrap(~DOSE) + labs(title = "cycle1_cmt2_pk")
+ggsave('cycle1_cmt2_pk.png')
+data_mean_sd <- data_cycle |>
+select(ID,NOMTIME, LIDV, NAME, DOSE) |>
+group_by(DOSE, NOMTIME) |>
+summarize(LIDV_mean = mean(LIDV),
+LIDV_sd = sd(LIDV)
+)
+data_cycle <- data |>
+filter(CYCLE == 1 & NAME == "PK Concentration")
+data_mean_sd_1 <- data |>
+filter(CYCLE == 1 & NAME == "PK Concentration")
+View(data_mean_sd_1)
+data_mean_sd_1 <- data |>
+filter(CYCLE == 1 & NAME == "PK Concentration") |>
+select(ID, NOMTIME, LIDV, NAME, DOSE)
+View(data_mean_sd_1)
+data_mean_sd_ |>
+group_by(DOSE, NOMTIME) |>
+summarize(LIDV_mean = mean(LIDV),
+LIDV_sd = sd(LIDV)
+)
+data_mean_sd_ 1|>
+# data
+data_mean_sd_ <- data |>
+filter(CYCLE == 1 & NAME == "PK Concentration") |>
+select(ID, NOMTIME, LIDV, NAME, DOSE) |>
+mutate(as.numeric(DOSE))
+# data
+data_mean_sd <- data |>
+filter(CYCLE == 1 & NAME == "PK Concentration") |>
+select(ID, NOMTIME, LIDV, NAME, DOSE) |>
+mutate(as.numeric(DOSE))
+View(data_mean_sd)
+# data
+data_mean_sd <- data |>
+filter(CYCLE == 1 & NAME == "PK Concentration") |>
+select(ID, NOMTIME, LIDV, NAME, DOSE) |>
+mutate(DOSE = as.numeric(DOSE))
+data_mean_sd|>
+group_by(DOSE, NOMTIME) |>
+summarize(LIDV_mean = mean(LIDV),
+LIDV_sd = sd(LIDV)
+)
+data_mean_sd_1 <- data_mean_sd|>
+group_by(DOSE, NOMTIME) |>
+summarize(LIDV_mean = mean(LIDV),
+LIDV_sd = sd(LIDV)
+)
+#cycle1 mean, SD
+data_mean_sd_1 <- data_mean_sd|>
+group_by(DOSE, NOMTIME) |>
+summarize(LIDV_mean = mean(LIDV),
+LIDV_sd = sd(LIDV)
+)
+View(data_mean_sd_1)
+data_mean_sd_1 |>
+ggplot(aes(x = NOMTIME, y = LIDV_mean)) + geom_line() + geom_point() +
+geom_errorbar(aes(ymin = LIDV_mean + LIDV_sd, ymax = LIDV_mean - LIDV_sd)) +
+facet_wrap(~DOSE)
+#packages ----
+library(tidyverse)
+library(ggplot2)
+library(NonCompart)
+#data ----
+data_cycle_1 <-  read_csv("pkpd_dataset.csv", na= "NA")
+# data
+data_mean_sd <- data |>
+filter(CYCLE == 1 & NAME == "PK Concentration") |>
+select(ID, NOMTIME, LIDV, NAME, DOSE) |>
+mutate(DOSE = as.numeric(DOSE))
+#packages ----
+library(tidyverse)
+library(ggplot2)
+library(NonCompart)
+# data
+data_mean_sd <- data |>
+filter(CYCLE == 1 & NAME == "PK Concentration") |>
+select(ID, NOMTIME, LIDV, NAME, DOSE) |>
+mutate(DOSE = as.numeric(DOSE))
+#packages ----
+library(tidyverse)
+library(ggplot2)
+library(NonCompart)
+#packages ----
+library(tidyverse)
+library(ggplot2)
+library(NonCompart)
+#data ----
+data_cycle_1 <-  read_csv("pkpd_dataset.csv", na= "NA")
+# data
+data_mean_sd <- data |>
+filter(CYCLE == 1 & NAME == "PK Concentration") |>
+select(ID, NOMTIME, LIDV, NAME, DOSE) |>
+mutate(DOSE = as.numeric(DOSE))
+data_mean_sd <- data |>
+filter(CYCLE == 1 & NAME == "PK Concentration") |>
+select(ID, NOMTIME, LIDV, NAME, DOSE) |>
+mutate(DOSE = as.numeric(DOSE))
+# data
+data_mean_sd <- data |>
+filter(CYCLE == 1 & NAME == "PK Concentration") |>
+select(ID, NOMTIME, LIDV, NAME, DOSE) |>
+mutate(DOSE = as.numeric(DOSE))
+data_mean_sd <- data |>
+filter(CYCLE == 1 & NAME == "PK Concentration") |>
+select(ID, NOMTIME, LIDV, NAME, DOSE) |>
+mutate(DOSE = as.numeric(DOSE))
+#packages ----
+library(tidyverse)
+library(ggplot2)
+library(NonCompart)
+#data ----
+data_cycle_1 <-  read_csv("pkpd_dataset.csv", na= "NA")
+#packages ----
+library(tidyverse)
+library(ggplot2)
+library(NonCompart)
+#data ----
+data <-  read_csv("pkpd_dataset.csv", na= "NA")
+#packages ----
+library(tidyverse)
+library(ggplot2)
+library(NonCompart)
+#data ----
+data <-  read_csv("pkpd_dataset.csv", na= "NA")
+# data
+data_mean_sd <- data |>
+filter(CYCLE == 1 & NAME == "PK Concentration") |>
+select(ID, NOMTIME, LIDV, NAME, DOSE) |>
+mutate(DOSE = as.numeric(DOSE))
+#cycle1 mean, SD
+data_mean_sd_1 <- data_mean_sd|>
+group_by(DOSE, NOMTIME) |>
+summarize(LIDV_mean = mean(LIDV),
+LIDV_sd = sd(LIDV)
+)
+data_mean_sd_1 |>
+ggplot(aes(x = NOMTIME, y = LIDV_mean)) + geom_line() + geom_point() +
+geom_errorbar(aes(ymin = LIDV_mean + LIDV_sd, ymax = LIDV_mean - LIDV_sd)) +
+facet_wrap(~DOSE)
+data_mean_sd_1 |>
+ggplot(aes(x = NOMTIME, y = LIDV_mean)) + geom_line() + geom_point() +
+geom_errorbar(aes(ymin = LIDV_mean + LIDV_sd, ymax = LIDV_mean - LIDV_sd)) +
+facet_wrap(~DOSE) + labs(title = "cycle1_pk")
+data_mean_sd_1 |>
+ggplot(aes(x = NOMTIME, y = LIDV_mean)) + geom_line() + geom_point() +
+geom_errorbar(aes(ymin = LIDV_mean + LIDV_sd, ymax = LIDV_mean - LIDV_sd)) +
+facet_wrap(~DOSE) + labs(title = "cycle1_pk_mean&sd")
+ggsave('cycle1_pk_mean&sd')
+data_mean_sd_1 <- data_mean_sd|>
+group_by(DOSE, NOMTIME) |>
+summarize(LIDV_mean = mean(LIDV),
+LIDV_sd = sd(LIDV)
+)
+data_mean_sd_1 |>
+ggplot(aes(x = NOMTIME, y = LIDV_mean)) + geom_line() + geom_point() +
+geom_errorbar(aes(ymin = LIDV_mean + LIDV_sd, ymax = LIDV_mean - LIDV_sd)) +
+facet_wrap(~DOSE) + labs(title = "cycle1_pk_mean&sd")
+ggsave('cycle1_pk_mean&sd.png')
+data_mean_sd_1 <- data_mean_sd|>
+group_by(DOSE, NOMTIME) |>
+summarize(LIDV_mean = mean(LIDV),
+LIDV_sd = sd(LIDV)
+)
+data_mean_sd_1 |>
+ggplot(aes(x = NOMTIME, y = LIDV_mean)) + geom_line() + geom_point() +
+geom_errorbar(aes(ymin = LIDV_mean + LIDV_sd, ymax = LIDV_mean - LIDV_sd)) +
+facet_wrap(~DOSE) + labs(title = "cycle1_pk_mean&sd")
+ggsave('cycle1_pk_mean&sd.png')
+data_nca <- data |>
+filter(NAME == "PK Concentration" & !is.na(LIDV)) |>
+select(ID, NOMTIME, LIDV, DOSE)
+View(data_nca)
+data_nca <- data |>
+filter(NAME == "PK Concentration" & !is.na(LIDV)) |>
+select(ID, NOMTIME, LIDV, DOSE, NAME)
+View(data_nca)
+nca_result <- tblNCA(data_nca, key=c("ID","DOSE"), colTime="NOMTIME", colConc="LIDV",timeUnit = "h", doseUnit="mg", concUnit="ng/mL")
+View(nca_result)
+nca_result <- tblNCA(data_nca, key="ID", colTime="NOMTIME", colConc="LIDV",timeUnit = "h", doseUnit="mg", concUnit="ng/mL")
+View(nca_result)
+nca_result <- tblNCA(data_nca, key=c("ID", "DOSE"), colTime="NOMTIME", colConc="LIDV",timeUnit = "h", doseUnit="mg", concUnit="ng/mL")
+View(nca_result)
+nca_result |>
+select(ID, DOSE, CMAX)
+source("C:/Users/clex9/OneDrive/바탕 화면/교수님 숙제/06.27/06.27 숙제.R", echo=TRUE)
+nca_result |>
+select(ID, DOSE, CMAX) |>
+group_by(DOSE) |>
+summarize(cmax_mean = mean(CMAX),
+cmax_median = median(CMAX),
+cmax_sd = sd(CMAX),
+cmax_min = min(CMAX),
+cmax_max = max(CMAX))
+data_nca <- data |>
+filter(NAME == "PK Concentration" & !is.na(LIDV)) |>
+select(ID, NOMTIME, LIDV, DOSE, NAME)
+#NCA result
+nca_result <- tblNCA(data_nca, key=c("ID", "DOSE"), colTime="NOMTIME", colConc="LIDV",timeUnit = "h", doseUnit="mg", concUnit="ng/mL")
+nca_result |>
+select(ID, DOSE, CMAX) |>
+group_by(DOSE) |>
+summarize(cmax_mean = mean(CMAX),
+cmax_median = median(CMAX),
+cmax_sd = sd(CMAX),
+cmax_min = min(CMAX),
+cmax_max = max(CMAX))
+data_nca <- data |>
+filter(NAME == "PK Concentration")
+View(data_nca)
+# data
+data_nca <- data |>
+filter(NAME == "PK Concentration" & !is.na(LIDV)) |>
+select(ID, NOMTIME, LIDV, DOSE, NAME)
+#NCA result
+nca_result <- tblNCA(data_nca, key=c("ID", "DOSE"), colTime="NOMTIME", colConc="LIDV",timeUnit = "h", doseUnit="mg", concUnit="ng/mL")
+nca_result |>
+select(ID, DOSE, CMAX) |>
+group_by(DOSE) |>
+summarize(cmax_mean = mean(CMAX),
+cmax_median = median(CMAX),
+cmax_sd = sd(CMAX),
+cmax_min = min(CMAX),
+cmax_max = max(CMAX))
+# data
+data_nca <- data |>
+filter(NAME == "PK Concentration" & !is.na(LIDV)) |>
+select(ID, NOMTIME, LIDV, DOSE, NAME)
+#NCA result
+nca_result <- tblNCA(data_nca, key=c("ID", "DOSE"), colTime="NOMTIME", colConc="LIDV",timeUnit = "h", doseUnit="mg", concUnit="ng/mL")
+nca_result |>
+select(ID, DOSE, CMAX) |>
+group_by(DOSE) |>
+summarize(CMAX_mean = mean(CMAX),
+CMAX_median = median(CMAX),
+CMAX_sd = sd(CMAX),
+CMAX_min = min(CMAX),
+CMAX_max = max(CMAX))
+library(nycflights13)
+library(tidyverse)
+flights |>
+group_by(dest) |>
+distinct(carrier)
+flights |>
+group_by(dest) |>
+distinct(carrier) |>
+summarize(carriers = str_flatten(carrier, ","))
+str_view(flights$carrier, "A")
+library(nycflights13)
+library(reprex)
+library(tidyverse)
+str_view(flights$carrier |> distinct(carrier), "A")
+str_view(flights$carrier, "A")
